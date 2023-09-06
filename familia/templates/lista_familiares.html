@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Familiares</title>
+</head>
+<body>
+    <h1>Lista de Familiares</h1>
+    <ul>
+        {% for familiar in familiares %}
+            <li>{{ familiar.nombre }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

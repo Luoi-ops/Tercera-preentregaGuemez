@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Familiar
 
-# Create your views here.
+def lista_familiares(request):
+    familiares = Familiar.objects.all()
+    return render(request, 'familia/lista_familiares.html', {'familiares': familiares})
